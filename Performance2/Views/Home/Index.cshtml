@@ -1,4 +1,5 @@
 ﻿@using Performance2.Models.ViewModels
+@using Performance2.Data.Models
 @model WorkerViewModel
 
 @{
@@ -9,22 +10,29 @@
 <div class="text-center">
     <h1 class="display-4">Workers Login</h1>
     <div class="m-4"></div>
-    <table id="Workers-Table" class="table table-dark">
-    <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Login Id</th>
-    </tr>
-    
-    @{
-        foreach(var worker in Model.Workers)
-        {
+    <form id="formWorker" method="post" asp-action="SaveWorkerChanges">
+        <table id="Workers-Table" class="table table-dark">
             <tr>
-                <td>@worker.FirstName</td>
-                <td>@worker.LastName</td>
-                <td>@worker.LoginID</td>            
+                <th>Worker Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Login Id</th>
             </tr>
-        }
-    }
-    </table>    
+    
+            @{
+                foreach(var worker in Model.Workers)
+                {
+                    <tr>
+                        <td>@worker.Id</td>                                                
+                        <td>@worker.FirstName</td>                                               
+                        <td>@worker.LastName</td>                        
+                        <td>@worker.LoginID</td>            
+                    </tr>                                                           
+                }
+            }
+        </table>
+        <input type="submit" class="btn btn-primary btn-lg" value="Save Changes" />       
+    </form>
+    
+
 </div>

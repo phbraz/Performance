@@ -8,6 +8,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Performance2.Services;
 using Performance2.Models.ViewModels;
+using Performance2.Data.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Performance2.Controllers
 {
@@ -33,6 +35,29 @@ namespace Performance2.Controllers
             };
            
             return View(vm);
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> SaveWorkerChanges()
+        {
+            var updateWorker = new UpdateWorker();
+
+            var workersToUpdate = updateWorker.UpdateUserName();
+           
+
+            var test = workersToUpdate.Select(x => new Employee
+            {
+                LoginId = x.LoginID,
+                BusinessEntityId = x.Id,
+                BusinessEntity = new Person() { BusinessEntityId = x.Id }
+                
+            });
+
+            updateWorker.SaveChanges(test);
+
+            return RedirectToAction("Index", "HomeController");
+
         }
 
         public IActionResult Privacy()
