@@ -1,0 +1,14 @@
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\bin\Debug\net6.0\Performance2.Data.deps.json
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\bin\Debug\net6.0\Performance2.Data.runtimeconfig.json
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\bin\Debug\net6.0\Performance2.Data.dll
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\bin\Debug\net6.0\Performance2.Data.pdb
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\obj\Debug\net6.0\Performance2.Data.csproj.AssemblyReference.cache
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\obj\Debug\net6.0\Performance2.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\obj\Debug\net6.0\Performance2.Data.AssemblyInfoInputs.cache
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\obj\Debug\net6.0\Performance2.Data.AssemblyInfo.cs
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\obj\Debug\net6.0\Performance2.Data.csproj.CoreCompileInputs.cache
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\obj\Debug\net6.0\Performance2.Data.dll
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\obj\Debug\net6.0\refint\Performance2.Data.dll
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\obj\Debug\net6.0\Performance2.Data.pdb
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\obj\Debug\net6.0\Performance2.Data.genruntimeconfig.cache
+D:\web-projects\performanceAPI\Performance2\Performance2.Data\obj\Debug\net6.0\ref\Performance2.Data.dll
